@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sstyle.css">
+    <title>Dice Game</title>
+</head>
+
+<body>
+
+    <h1 class="heading">WELCOME TO DICE GAME</h1>
+    <button onclick=" howTO_play()" id="btn">How to Play</button>
+   <div id="play">
+     <h6>How to play</h6>
+     <p>
+        1. Objective: Guess the secret number correctly within a range of numbers.
+        <br>
+        2. Game Rounds: You have a total of 10 rounds to play.
+        <br>
+        3. Winning Condition: To win the game, you must successfully guess the number correctly in at least 3 out of the 10 rounds.
+        <br>
+        <b>Game Rules:</b><br>
+        In each round, you will be asked to guess a number within a specified range. <br>
+        If your guessed number matches the secret number, you win that round. <br>
+        The game will keep track of the number of rounds won.
+        <br>
+       <b> Game Outcome:</b><br>
+        Winning: If you win at least 3 rounds out of 10, you win the game! <br>
+        Losing: If you win fewer than 3 rounds after 10 rounds of play, you lose the game</p>
+   </div>
+    <h3 id="win_loss_message">
+
+    </h3>
+    <div class="main">
+        <div class="box" onclick="tryLuck(1)">1</div>
+        <div class="box" onclick="tryLuck(2)">2</div>
+        <div class="box" onclick="tryLuck(3)">3</div>
+        <div class="box" onclick="tryLuck(4)">4</div>
+        <div class="box" onclick="tryLuck(5)">5</div>
+        <div class="box" onclick="tryLuck(6)">6</div>
+        </div>
+        
+       
+        <div class="container">
+            <div class="box1">User Number: <span id="userNumber"></span></div>
+            <div class="box1">Random Number: <span  id="randomNumber"></span></div>
+            <div id="result" class="box1">Win/loss </div>
+        </div>
+
+        <div class="container">
+            <div class="box1">Turns Left: <span id="turns"></span></div>
+            <div class="box1">Wins: <span  id="win"></span></div>
+            <div  class="box1">loss: <span id="loss"></span> </div>
+        </div>
+
+
+        <h6 id="credit">Developed by: <b> Ahsan Tahir</b></h6>
+
+        <script src="./script.js"></script>
+</body>
+
+</html>
